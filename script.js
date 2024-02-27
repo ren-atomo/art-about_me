@@ -1,6 +1,6 @@
 // 6つの外側の円を配置する
 const outerCircles = document.querySelectorAll('.outer-circle');
-const radius = 375; // 中心からの距離
+const radius = 350; // 中心からの距離
 const circleCount = 6; // 円の数を6に設定
 const outerContainer = document.querySelector('.outer-circles');
 const centerX = outerContainer.offsetWidth / 2; // 画面中央のX座標
