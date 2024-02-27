@@ -1,0 +1,98 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* 背景色を黒に設定 */
+}
+
+.line {
+    background-color: white;
+    position: absolute;
+    z-index: 1; /* 線を中心の円より後ろに持ってくる */
+}
+
+.center-circle {
+    width: 325px;
+    height: 325px;
+    background-image: url('IMG.jpg');
+    background-size: cover;
+    background-position: center; 
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    transition: transform 0.3s ease; /* 滑らかな移動効果を追加 */
+}
+
+.center-circle:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.outer-circles {
+    position: relative;
+}
+
+.outer-circle {
+    width: 200px; /* 外側の円のサイズを大きくする */
+    height: 200px; /* 外側の円のサイズを大きくする */
+    background-color: #3498db;
+    border-radius: 20%;
+    background-size: 400%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+    color: white;
+    font-size: 30px; /* フォントサイズを大きくする */
+    font-family: 'Helvetica', sans-serif; /* Helveticaフォントを指定 */
+    transition: transform 0.3s ease; /* アニメーションのトランジションを設定 */
+}
+
+.outer-circle:hover {
+    transform: scale(1.1); /* カーソルが重なった時に円を拡大する */
+    cursor: pointer; /* カーソルをポインターに変更する */
+}
+
+.outer-circle:nth-child(0) {
+    background-image: url('z_idea.jpg');
+}
+
+.outer-circle:nth-child(1) {
+    background-image: url('z_memo-1.jpg');
+}
+
+.outer-circle:nth-child(2) {
+    background-image: url('z_memo-2.jpg');
+}
+
+.outer-circle:nth-child(3) {
+    background-image: url('z_memo-3.jpg');
+}
+
+.outer-circle:nth-child(4) {
+    background-image: url('z_memo-4.jpg');
+}
+
+.outer-circle:nth-child(5) {
+    background-image: url('z_memo-5.jpg');
+}
+
+.outer-circle:nth-child(6) {
+    background-image: url('z_idea.jpg');
+}
+
+
+.outer-circle:nth-child(7) {
+    background-image: url('z_idea.jpg');
+}
+
+.circle-number {
+    position: absolute;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 36px; /* 文字サイズを大きく */
+}
